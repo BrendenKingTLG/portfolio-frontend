@@ -1,0 +1,10 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: portfolio-frontend-app-route
+spec:
+  to:
+    kind: Service
+    name: portfolio-frontend-app-service
+  port:
+    targetPort: 8080

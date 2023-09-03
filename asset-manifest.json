@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.78e3c1c0.css",
-    "main.js": "/static/js/main.58f2b6ca.js",
-    "static/media/A.png": "/static/media/A.d0613a2f29486eb98e6d.png",
-    "static/media/project.png": "/static/media/project.f35a44f31497b0b23829.png",
-    "static/media/cysa.png": "/static/media/cysa.fe88d274f8b0f24bd7bc.png",
-    "static/media/SAA.png": "/static/media/SAA.298f19ca77c3117ee6c1.png",
-    "static/media/CAP.png": "/static/media/CAP.f3fade60ba00928f1a10.png",
-    "static/media/network.png": "/static/media/network.403657f470ebe136bd45.png",
-    "static/media/sec.png": "/static/media/sec.4b01aa5b8f32fce91b47.png",
-    "static/media/CCP.png": "/static/media/CCP.66cdbfdcafd1ce388f42.png",
-    "static/media/linux.png": "/static/media/linux.8c11ad8c01e245aa6e45.png",
-    "static/media/website.png": "/static/media/website.6d3306e45380b309f795.png",
-    "index.html": "/index.html",
-    "main.78e3c1c0.css.map": "/static/css/main.78e3c1c0.css.map",
-    "main.58f2b6ca.js.map": "/static/js/main.58f2b6ca.js.map"
+    "main.css": "/portfolio-frontend/static/css/main.78e3c1c0.css",
+    "main.js": "/portfolio-frontend/static/js/main.3ff37506.js",
+    "static/media/A.png": "/portfolio-frontend/static/media/A.d0613a2f29486eb98e6d.png",
+    "static/media/project.png": "/portfolio-frontend/static/media/project.f35a44f31497b0b23829.png",
+    "static/media/cysa.png": "/portfolio-frontend/static/media/cysa.fe88d274f8b0f24bd7bc.png",
+    "static/media/SAA.png": "/portfolio-frontend/static/media/SAA.298f19ca77c3117ee6c1.png",
+    "static/media/CAP.png": "/portfolio-frontend/static/media/CAP.f3fade60ba00928f1a10.png",
+    "static/media/network.png": "/portfolio-frontend/static/media/network.403657f470ebe136bd45.png",
+    "static/media/sec.png": "/portfolio-frontend/static/media/sec.4b01aa5b8f32fce91b47.png",
+    "static/media/CCP.png": "/portfolio-frontend/static/media/CCP.66cdbfdcafd1ce388f42.png",
+    "static/media/linux.png": "/portfolio-frontend/static/media/linux.8c11ad8c01e245aa6e45.png",
+    "static/media/website.png": "/portfolio-frontend/static/media/website.6d3306e45380b309f795.png",
+    "index.html": "/portfolio-frontend/index.html",
+    "main.78e3c1c0.css.map": "/portfolio-frontend/static/css/main.78e3c1c0.css.map",
+    "main.3ff37506.js.map": "/portfolio-frontend/static/js/main.3ff37506.js.map"
   },
   "entrypoints": [
     "static/css/main.78e3c1c0.css",
-    "static/js/main.58f2b6ca.js"
+    "static/js/main.3ff37506.js"
   ]
 }

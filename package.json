@@ -1,9 +1,10 @@
 {
-  "homepage": "https://brendenkingtlg.github.io/portfolio-frontend/",
+  "homepage": "https://brendenkingtlg.github.io/",
   "name": "brendenkingreact",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "latest",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -30,12 +31,6 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -49,6 +44,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.0.0",
     "react-scripts": "^5.0.1",
     "web-vitals": "^3.3.1"
   }

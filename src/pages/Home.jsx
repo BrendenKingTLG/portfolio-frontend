@@ -2,7 +2,7 @@ import SectionCard from "../components/SectionCard";
 export default function Home() {
   return (
     <>
-      <div className="container d-flex">
+      <div className="container d-flex" style={{ width: "100%" }}>
         <section>
           <h2 className="mt-2">Web Development Concepts</h2>
           <nav className="navbar navbar-expand-lg" id="globalnav">

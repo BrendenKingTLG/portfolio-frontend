@@ -18,10 +18,7 @@ function App() {
   const [logData, setLogData] = useState([]);
   return (
     <>
-      <div
-        id="main-container"
-        className="container d-flex justify-center flex-column"
-      >
+      <div id="main-container" className="">
         <BrowserRouter>
           <GlobalNav />
 

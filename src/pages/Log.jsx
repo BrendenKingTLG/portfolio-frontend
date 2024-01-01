@@ -1,21 +1,24 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import LogTable from "../components/LogTable";
 import { useNavigate } from "react-router-dom";
 
-export default function Log({}) {
+export default function Log() {
   const navigate = useNavigate();
   const [document, setDocument] = useState([]);
+  const [error, setError] = useState(null);
 
   const fetchLogData = async () => {
-    fetch("/log")
-      .then((response) => response.json())
-      .then((response) => {
-        setDocument(response);
-      })
-      .catch((error) => {
-        console.log(error);
-        alert("an error occured");
-      });
+    try {
+      const response = await fetch("/log");
+      if (!response.ok) {
+        throw new Error("Could not fetch data from the server");
+      }
+      const data = await response.json();
+      setDocument(data);
+    } catch (error) {
+      console.error(error);
+      setError("Could not connect to the database. Please try again later.");
+    }
   };
 
   useEffect(() => {
@@ -27,22 +30,21 @@ export default function Log({}) {
   };
 
   const deleteLog = (property) => {
-    console.log(property);
     fetch(`/log/${property["_id"]}`, {
       method: "DELETE",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(property),
     })
       .then((res) => {
-        console.log(res);
-        if (res.status === 201) {
-          alert("success");
+        if (res.ok) {
+          alert("Success");
         } else {
-          alert("attempt failed");
+          alert("Delete attempt failed");
         }
       })
       .catch((err) => {
-        alert(err);
+        console.error(err);
+        alert("An error occurred during delete operation");
       });
 
     fetchLogData();
@@ -55,11 +57,15 @@ export default function Log({}) {
         <p className="text-center">
           Log of every property a company has purchased
         </p>
-        <LogTable
-          data={document}
-          updateFunc={updateOneLog}
-          deleteFunc={deleteLog}
-        />
+        {error ? (
+          <div className="text-red-500 text-center">{error}</div>
+        ) : (
+          <LogTable
+            data={document}
+            updateFunc={updateOneLog}
+            deleteFunc={deleteLog}
+          />
+        )}
       </article>
     </>
   );

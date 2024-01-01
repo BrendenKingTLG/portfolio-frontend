@@ -2,38 +2,25 @@ import SectionCard from "../components/SectionCard";
 export default function Home() {
   return (
     <>
-      <div className="container d-flex" style={{ width: "100%" }}>
-        <section>
-          <h2 className="mt-2">Web Development Concepts</h2>
-          <nav className="navbar navbar-expand-lg" id="globalnav">
-            <div
-              className="collapse navbar-collapse justify-content-center"
-              id="navbarNav"
-            >
-              <ul className="navbar-nav">
-                <li className="nav-item">
-                  <a className="nav-link" href="#images">
-                    Optimizing Images
-                  </a>{" "}
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#css">
-                    CSS
-                  </a>{" "}
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#forms">
-                    Forms
-                  </a>{" "}
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#express">
-                    Express
-                  </a>{" "}
-                </li>
-              </ul>
+      <div className="">
+        <div className="hero min-h-screen bg-base-200">
+          <div className="hero-content text-center">
+            <div className="max-w-md">
+              <h1 className="text-5xl font-bold">Hello there</h1>
+              <p className="py-6">
+                Would you like to learn more about web development?
+              </p>
+              <a href="#webserver" className="btn btn-primary">
+                Get Started
+              </a>
             </div>
-          </nav>
+          </div>
+        </div>
+        <section>
+          <h2 className="text-3xl font-bold pt-7 text-center">
+            Web Development Concepts
+          </h2>
+
           <article id="webserver">
             <SectionCard
               cardTitle="Web Servers"
